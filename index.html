@@ -16,29 +16,20 @@
 
     main,
     footer {
-      padding: 2% 4%;
+      padding: 2% 5%;
     }
 
     header {
       background-color: rgb(183, 0, 2);
-      padding: 3%;
+      padding: 8% 5%;
       border-bottom: 5px solid black;
       height: 12vh;
     }
 
     h1 {
       color: #ffffff;
-      font-size: 7vw;
+      font-size: 24px;
       font-weight: 100;
-      vertical-align: bottom;
-      display: table-cell;
-      height: inherit;
-    }
-
-    h1:after {
-      content: '';
-      display: block;
-      height: 5vw;
     }
 
     .space_sunrise {
@@ -62,7 +53,7 @@
     }
 
     h2 {
-      font-size: 30px;
+      font-size: 27px;
     }
 
     p,
@@ -83,17 +74,15 @@
       padding-left: 5%;
     }
 
+
     /* ============================
 MEDIA QUERIES
 ============================*/
     @media screen and (min-width: 576px) {
-      /* h1 {
-        font-size: 36px;
+      h1 {
+        font-size: 6vw;
       }
 
-      h1::after {
-        height: 30px;
-      } */
 
       p,
       li {
@@ -106,13 +95,6 @@ MEDIA QUERIES
     }
 
     @media screen and (min-width: 768px) {
-      /* h1 {
-        font-size: 40px;
-      }
-
-      h1::after {
-        height: 40px;
-      } */
 
       main,
       footer {
@@ -134,7 +116,7 @@ MEDIA QUERIES
 
       h1 {
         width: 75%;
-        padding: 5vh 0 0 3vh;
+        padding: 7vh 0 0 3vh;
         font-size: 5vw;
       }
 
@@ -167,6 +149,11 @@ MEDIA QUERIES
 
       .info {
         margin-top: 15px;
+      }
+
+      footer {
+        position: absolute;
+        bottom: 0;
       }
     }
   </style>
