@@ -6,7 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Complete Holdings Limited</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
+  <style scoped>
+    /* default - mobile phone portrait */
     * {
       box-sizing: border-box;
       margin: 0;
@@ -22,12 +23,12 @@
       background-color: rgb(183, 0, 2);
       padding: 3%;
       border-bottom: 5px solid black;
-      height: 85px;
+      height: 12vh;
     }
 
     h1 {
       color: #ffffff;
-      font-size: 29px;
+      font-size: 7vw;
       font-weight: 100;
       vertical-align: bottom;
       display: table-cell;
@@ -37,7 +38,7 @@
     h1:after {
       content: '';
       display: block;
-      height: 23px;
+      height: 5vw;
     }
 
     .space_sunrise {
@@ -80,6 +81,93 @@
 
     ul {
       padding-left: 5%;
+    }
+
+    /* ============================
+MEDIA QUERIES
+============================*/
+    @media screen and (min-width: 576px) {
+      /* h1 {
+        font-size: 36px;
+      }
+
+      h1::after {
+        height: 30px;
+      } */
+
+      p,
+      li {
+        font-size: 1em;
+      }
+
+      ul {
+        padding-left: 4%;
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      /* h1 {
+        font-size: 40px;
+      }
+
+      h1::after {
+        height: 40px;
+      } */
+
+      main,
+      footer {
+        padding: 2% 10%;
+      }
+
+      .value {
+        margin: 5px;
+      }
+    }
+
+    @media screen and (min-width: 992px) {
+      header {
+        padding: 0;
+        display: flex;
+        height: 150px;
+        border-bottom: 10px solid black;
+      }
+
+      h1 {
+        width: 75%;
+        padding: 5vh 0 0 3vh;
+        font-size: 5vw;
+      }
+
+      .space_sunrise {
+        display: inherit;
+        width: 25%;
+      }
+
+      main {
+        display: flex;
+      }
+
+      main,
+      footer {
+        padding: 2% 4%;
+      }
+
+      section {
+        margin-right: 35px;
+      }
+
+      .value {
+        width: 190px;
+        height: 170px;
+      }
+
+      h2 {
+        font-size: 36px;
+      }
+
+      .info {
+        margin-top: 15px;
+      }
     }
   </style>
 </head>
