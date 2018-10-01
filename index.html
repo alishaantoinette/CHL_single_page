@@ -7,56 +7,138 @@
   <title>Complete Holdings Limited</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      font-family: Arial, 'Arial Black', sans-serif
+    }
 
+    main,
+    footer {
+      padding: 2% 4%;
+    }
+
+    header {
+      background-color: rgb(183, 0, 2);
+      padding: 3%;
+      border-bottom: 5px solid black;
+      height: 85px;
+    }
+
+    h1 {
+      color: #ffffff;
+      font-size: 29px;
+      font-weight: 100;
+      vertical-align: bottom;
+      display: table-cell;
+      height: inherit;
+    }
+
+    h1:after {
+      content: '';
+      display: block;
+      height: 23px;
+    }
+
+    .space_sunrise {
+      display: none;
+    }
+
+    section {
+      margin-top: 20px;
+    }
+
+    .row {
+      display: flex;
+    }
+
+    .value {
+      background-color: grey;
+      color: #ffffff;
+      width: 50%;
+      padding: 15px;
+      margin: 3px;
+    }
+
+    h2 {
+      font-size: 30px;
+    }
+
+    p,
+    li {
+      font-size: .8em;
+      margin: 2px 0;
+    }
+
+    .info {
+      margin-bottom: 20px;
+    }
+
+    .info__space {
+      margin-bottom: 12px;
+    }
+
+    ul {
+      padding-left: 5%;
+    }
   </style>
 </head>
 
 <body>
   <header>
     <h1>Complete Holdings Limited</h1>
-    <img src="./CHL_sunrise.jpg" alt="space sunrise">
+    <img src="./CHL_sunrise.jpg" alt="space sunrise" class="space_sunrise">
   </header>
 
   <main>
-    <section class="values">
-      <div class="values__row-one">
-        <h2>Do</h2>
-        <p>everything</p>
-        <p>with integrity</p>
+    <section>
+      <div class="row">
+        <div class="value">
+          <h2>Do</h2>
+          <p>everything</p>
+          <p>with integrity</p>
+        </div>
+        <div class="value">
+          <h2>Respect</h2>
+          <p>all people</p>
+          <p>all relationships</p>
+          <p>all levels</p>
+        </div>
       </div>
-      <div class="values__row-one">
-        <h2>Respect</h2>
-        <p>all people</p>
-        <p>all relationships</p>
-        <p>all levels</p>
-      </div>
-      <div class="values__row-two">
-        <p>Have</p>
-        <h2>Fun</h2>
-        <p>while being</p>
-        <p>the best</p>
-      </div>
-      <div class="values__row-two">
-        <p>Empower</p>
-        <h2>People</h2>
+      <div class="row">
+        <div class="value">
+          <p>Have</p>
+          <h2>Fun</h2>
+          <p>while being</p>
+          <p>the best</p>
+        </div>
+        <div class="value">
+          <p>Empower</p>
+          <h2>People</h2>
+        </div>
       </div>
     </section>
-    <section class="about">
-      <h4>Global Solutions. Accelerated Results.</h4>
-      <p>Clients around the world turn to professionals at Complete Holdings Limited to accelerate results for:</p>
-      <ul>
-        <li>Getting ideas to market faster</li>
-        <li>Solving quality problems</li>
-        <li>Making and shipping innovative products</li>
-        <li>Developing sales in strategic markets</li>
-        <li>Scaling operations to drive growth</li>
-      </ul>
-      <h4>Contact</h4>
-      <p>Complete Holdings Limited</p>
-      <p>12/F On Lan Centre</p>
-      <p>11-15 On Lan Street</p>
-      <p>Central</p>
-      <p>Hong Kong</p>
+    <section>
+      <div class="info">
+        <h4 class="info__space">Global Solutions. Accelerated Results.</h4>
+        <p class="info__space">Clients around the world turn to professionals at Complete Holdings Limited to
+          accelerate results for:</p>
+        <ul>
+          <li>Getting ideas to market faster</li>
+          <li>Solving quality problems</li>
+          <li>Making and shipping innovative products</li>
+          <li>Developing sales in strategic markets</li>
+          <li>Scaling operations to drive growth</li>
+        </ul>
+      </div>
+      <div class="info">
+        <h4 class="info__space">Contact</h4>
+        <p>Complete Holdings Limited</p>
+        <p>12/F On Lan Centre</p>
+        <p>11-15 On Lan Street</p>
+        <p>Central</p>
+        <p>Hong Kong</p>
+      </div>
     </section>
   </main>
 
